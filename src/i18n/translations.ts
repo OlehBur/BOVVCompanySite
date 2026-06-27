@@ -60,7 +60,7 @@ export const translations = {
             home: 'Головна',
             projects: 'Проєкти',
             activity: 'Активність',
-            privacy: 'Privacy Policy',
+            privacy: 'Політика Конфіденційності',
             contacts: 'Контакти',
         },
         hero: {
@@ -139,7 +139,7 @@ export const translations = {
         },
         hero: {
             eyebrow: 'Indie Game Studio',
-            tagline: ' Everything you can imagine can be turned into a game. The only limits are your skills and time.<br /> We make addictive games.',
+            tagline: ' Everything you can imagine can be turned into a game. The only limits are your skills and time. We make addictive games.',
             projects: 'Our projects',
             follow: 'Follow us',
         },

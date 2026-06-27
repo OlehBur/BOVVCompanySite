@@ -16,21 +16,20 @@ interface NavItem {
   sectionId: string | null; // null = up
 }
 
-const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', sectionId: null },
-  { label: 'Projects', sectionId: 'projects' },
-  { label: 'Activity', sectionId: 'activity' },
-  { label: 'Privacy Policy', sectionId: 'privacy' },
-  { label: 'Contacts', sectionId: 'links' },
-];
-
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const { locale, setLocale, } = useLocale();
+  const { locale, setLocale, t} = useLocale();
   const isHome = location.pathname === '/';
+  const NAV_ITEMS: NavItem[] = [
+    { label: t.nav.home, sectionId: null },
+    { label: t.nav.projects, sectionId: 'projects' },
+    { label: t.nav.activity, sectionId: 'activity' },
+    { label: t.nav.privacy, sectionId: 'privacy' },
+    { label: t.nav.contacts, sectionId: 'links' },
+  ];
 
 
   useEffect(() => {
