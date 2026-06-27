@@ -3,6 +3,7 @@ export type Locale = 'uk' | 'en';
 export const translations = {
     uk: {
         activity: {
+            title: 'Активність',
             follow_us: 'Слідкуйте за нами',
             last_vid_from: 'Останні відео з нашого',
             yt_channel: 'YouTube каналу',
@@ -39,7 +40,7 @@ export const translations = {
             effective_date: 'Дата набрання чинності:',
             contact: 'Зв\'язок',
             questions: 'Якщо у вас виникнуть будь-які питання чи зауваження, будь ласка, звертайтеся до нас за адресою:',
-            others: 'Інші'
+            others: 'Інші Політики Конфіденційності'
         },
         game_data: {
             dj_desc: 'Пориньте в глибини океану та виживіть серед хижаків. Аркадна гра на виживання та стратегію з таблицями лідерів та досягненнями.',
@@ -64,7 +65,7 @@ export const translations = {
         },
         hero: {
             eyebrow: 'Студія незалежних ігор',
-            tagline: 'Маленька студія. Великі ідеї.\nМи робимо ігри, які затягують.',
+            tagline: 'Абсолютно все, що ви тільки можете уявити — можна втілити в грі. Єдині обмеження це ваші навички та час.\nМи робимо ігри, які затягують.',
             projects: 'Наші проєкти',
             follow: 'Слідкувати',
         },
@@ -76,6 +77,7 @@ export const translations = {
     },
     en: {
         activity: {
+            title: 'Activity',
             follow_us: 'Follow us',
             last_vid_from: 'Latest videos from our',
             yt_channel: 'YouTube channel',
@@ -112,7 +114,7 @@ export const translations = {
             effective_date: 'Effective date:',
             contact: 'Contact',
             questions: 'If you have any questions or concerns, feel free to reach us at:',
-            others: 'Others'
+            others: 'Others Privacy Policy'
         },
         game_data: {
             dj_desc: 'Dive into the depths of the ocean and survive among predators.A survival arcade game with leaderboards and achievements.',

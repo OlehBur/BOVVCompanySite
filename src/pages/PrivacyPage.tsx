@@ -64,7 +64,7 @@ const PrivacyPage: React.FC = () => {
 
         {/* Links to other policies */}
         <div className="privacy-page-other">
-          <p className="privacy-page-other-label">{t.privacy.others} {t.privacy.privacy}:</p>
+          <p className="privacy-page-other-label">{t.privacy.others}:</p>
           <div className="privacy-page-other-links">
             {privacyPolicies
               .filter((p) => p.gameId !== gameId)

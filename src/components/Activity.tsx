@@ -100,7 +100,7 @@ const Activity: React.FC = () => {
       <div className="container">
         <div className="section-header">
           <span className="section-eyebrow">{t.activity.follow_us}</span>
-          <h2 className="section-title">Activity</h2>
+          <h2 className="section-title">{t.activity.title}</h2>
           <p className="section-subtitle">
             {t.activity.last_vid_from} {' '}
             <a

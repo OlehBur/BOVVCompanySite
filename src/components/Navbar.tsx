@@ -99,17 +99,17 @@ const Navbar: React.FC = () => {
           <span className={menuOpen ? 'open' : ''} />
           <span className={menuOpen ? 'open' : ''} />
         </button>
-      </div>
-      <div className="locale-switcher">
-        <button
-          className={locale === 'uk' ? 'active' : ''}
-          onClick={() => setLocale('uk')}
-        >UK</button>
-        <span>/</span>
-        <button
-          className={locale === 'en' ? 'active' : ''}
-          onClick={() => setLocale('en')}
-        >EN</button>
+        <div className="locale-switcher">
+          <button
+            className={locale === 'uk' ? 'active' : ''}
+            onClick={() => setLocale('uk')}
+          >UK</button>
+          <span>/</span>
+          <button
+            className={locale === 'en' ? 'active' : ''}
+            onClick={() => setLocale('en')}
+          >EN</button>
+        </div>
       </div>
     </nav>
   );

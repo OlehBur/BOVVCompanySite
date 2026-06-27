@@ -26,9 +26,8 @@ const Footer: React.FC = () => {
               // href={`#projects`}
               onClick={() => {
                 navigate('/');
-                setTimeout(() => {
-                  document.getElementById("projects")?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 80);
+                setTimeout(() =>
+                  document.getElementById("projects")?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
               }}>
               {g.title}
             </a>
