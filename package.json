@@ -2,7 +2,7 @@
   "name": "bovv-company-site",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/OlehBur/BovvCompanySite",
+  "homepage": "https://olehbur.github.io/BovvCompanySite/",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,11 +1,12 @@
 import React from 'react';
-import { games } from '../data/games';
+import { getGames } from '../data/games';
 import GameCard from './GameCard';
 import { useLocale } from '../i18n/LocaleContext';
 import './Projects.css';
 
 const Projects: React.FC = () => {
   const { t } = useLocale();
+  const games = getGames(t); 
 
   return (
     <section className="projects section" id="projects">

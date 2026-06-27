@@ -16,10 +16,12 @@ export interface GameData {
 
 import dj_img from '../assets/DJ.png';
 import sp_img from '../assets/SP.jpg';
-import { useLocale } from '../i18n/LocaleContext';
-const { t } = useLocale();
+import { type Translations } from '../i18n/translations';
 
-export const games: GameData[] = [
+
+// export const games: GameData[] = [
+//   {
+export const getGames = (t: Translations): GameData[] => [
   {
     id: 'deep-jaws',
     title: 'Deep Jaws',

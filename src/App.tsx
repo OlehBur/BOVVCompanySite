@@ -1,10 +1,10 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { LocaleProvider } from './i18n/LocaleContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import PrivacyPage from './pages/PrivacyPage';
-import { LocaleProvider } from './i18n/LocaleContext';
 
 const App: React.FC = () => {
   return (
