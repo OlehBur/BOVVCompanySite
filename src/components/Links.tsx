@@ -37,10 +37,10 @@ const Links: React.FC = () => {
     <section className="links section" id="links">
       <div className="container">
         <div className="section-header">
-          <span className="section-eyebrow">Залишайся на зв'язку</span>
-          <h2 className="section-title">Ми в мережі</h2>
+          <span className="section-eyebrow">Stay connected</span>
+          <h2 className="section-title">We are online</h2>
           <p className="section-subtitle">
-            Підписуйся — ми публікуємо девлоги, оновлення та анонси нових ігор.
+            Subscribe - we publish devlogs, updates and announcements of new games.
           </p>
         </div>
 

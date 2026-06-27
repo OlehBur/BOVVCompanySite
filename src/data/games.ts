@@ -19,10 +19,10 @@ export const games: GameData[] = [
     id: 'deep-jaws',
     title: 'Deep Jaws',
     description:
-      'Занурся в глибини океану та виживи серед хижаків. Аркадна гра на виживання з таблицями лідерів та досягненнями.',
-    genre: 'Аркада / Виживання',
-    tags: ['Аркада', 'Виживання', 'Океан'],
-    coverImage: 'my-dev-site/src/assets/DJ.png',
+      'Dive into the depths of the ocean and survive among predators. A survival arcade game with leaderboards and achievements.',
+    genre: 'Arcade / Survival',
+    tags: ['Arcade', 'Survival', 'Ocean'],
+    coverImage: '../assets/DJ.png',
     isPublished: true,
     platforms: {
       googlePlay: 'https://play.google.com/store/apps/details?id=com.bovvcompany.deepjaws', 
@@ -33,10 +33,10 @@ export const games: GameData[] = [
     id: 'spin-the-prop',
     title: 'Spin the Prop',
     description:
-      'Літай, досліджуй, прокачуй острів та доставляй товари.',
-    genre: 'Казуальна',
-    tags: ['Казуальна', 'Aркада'],
-    coverImage: 'my-dev-site/src/assets/SP.jpg',
+      'Fly, explore, pump the island and deliver goods.',
+    genre: 'Casual / Simulators',
+    tags: ['Casual', 'Arcade', 'Simulators'],
+    coverImage: '../assets/SP.jpg',
     isPublished: false, // in dev
     platforms: {
       // googlePlay: '', //todo

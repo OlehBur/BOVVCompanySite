@@ -96,17 +96,17 @@ const Activity: React.FC = () => {
     <section className="activity section" id="activity">
       <div className="container">
         <div className="section-header">
-          <span className="section-eyebrow">Слідкуй за нами</span>
-          <h2 className="section-title">Активність</h2>
+          <span className="section-eyebrow">Follow us</span>
+          <h2 className="section-title">Activity</h2>
           <p className="section-subtitle">
-            Останні відео з нашого{' '}
+            Latest videos from our {' '}
             <a
               href={`https://youtube.com/@${CHANNEL_HANDLE}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-link"
             >
-              YouTube каналу
+              YouTube channel
             </a>
           </p>
         </div>
@@ -114,14 +114,14 @@ const Activity: React.FC = () => {
         {loading && (
           <div className="activity-loading">
             <div className="loader" />
-            <p>Завантажуємо відео…</p>
+            <p>Loading video...</p>
           </div>
         )}
 
         {error && (
           <div className="activity-error">
             <p>
-              Не вдалося завантажити відео. Перегляньте канал напряму:{' '}
+              Failed to download video. Watch the channel live:{' '}
               <a
                 href={`https://youtube.com/@${CHANNEL_HANDLE}`}
                 target="_blank"
@@ -139,7 +139,7 @@ const Activity: React.FC = () => {
             {regular.length > 0 && (
               <div className="activity-block">
                 <h3 className="activity-sub-title">
-                  <span>▶</span> Останні відео
+                  <span>▶</span> Latest videos
                 </h3>
                 <div className="videos-grid">
                   {regular.map((v) => (
@@ -164,7 +164,7 @@ const Activity: React.FC = () => {
 
             {regular.length === 0 && shorts.length === 0 && (
               <p className="activity-empty">
-                Відеозаписи ще не з'явились. Підпишіться, щоб не пропустити!
+                Videos have not yet appeared. Subscribe so you don't miss out!
               </p>
             )}
           </>

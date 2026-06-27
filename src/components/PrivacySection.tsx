@@ -8,11 +8,10 @@ const PrivacySection: React.FC = () => {
     <section className="privacy-section section" id="privacy">
       <div className="container">
         <div className="section-header">
-          <span className="section-eyebrow">Прозорість</span>
+          <span className="section-eyebrow">Transparency</span>
           <h2 className="section-title">Privacy Policy</h2>
           <p className="section-subtitle">
-            Ми поважаємо вашу приватність. Ознайомтеся з політиками
-            для кожного із наших продуктів.
+            We respect your privacy. See the policies for each of our products.
           </p>
         </div>
 
@@ -26,7 +25,7 @@ const PrivacySection: React.FC = () => {
               <div className="privacy-card-icon">🔒</div>
               <div className="privacy-card-text">
                 <h3>{game.title}</h3>
-                <p>Переглянути повну Privacy Policy для {game.title}</p>
+                <p>View the full Privacy Policy for {game.title}</p>
               </div>
               <span className="privacy-card-arrow">→</span>
             </Link>

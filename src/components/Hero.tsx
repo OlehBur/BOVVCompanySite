@@ -2,12 +2,16 @@ import React from 'react';
 import './Hero.css';
 
 const Hero: React.FC = () => {
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <section className="hero" id="home">
       {/* Banner image strip */}
       <div className="hero-banner">
         <img
-          src="/images/company-banner.jpg"
+          src="../assets/dj_banner.jpg"
           alt="BovvCompany banner"
           className="hero-banner-img"
           onError={(e) => {
@@ -20,7 +24,7 @@ const Hero: React.FC = () => {
       <div className="hero-content">
         <div className="hero-logo-wrap">
           <img
-            src="/images/company-logo.png"
+            src="../assets/logo.png"
             alt="BovvCompany logo"
             className="hero-logo"
             onError={(e) => {
@@ -36,15 +40,18 @@ const Hero: React.FC = () => {
           </h1>
           <p className="hero-tagline">
             Everything you can imagine can be turned into a game. The only limits are your skills and time.<br />
-            Ми робимо ігри, які затягують.
+            We make addictive games.
           </p>
           <div className="hero-cta-row">
-            <a href="#projects" className="btn btn-primary">
-              Наші проєкти
-            </a>
-            <a href="#links" className="btn btn-ghost">
+            <button className="btn btn-primary" onClick={() => scrollTo('projects')}>
+              Our projects
+            </button>
+            {/* <a href="#links" className="btn btn-ghost">
               Слідкувати
-            </a>
+            </a> */}
+            <button className="btn btn-ghost" onClick={() => scrollTo('links')}>
+              Follow
+            </button>
           </div>
         </div>
       </div>

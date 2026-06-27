@@ -10,25 +10,25 @@ export const socialLinks: SocialLink[] = [
     label: 'YouTube',
     url: 'https://www.youtube.com/@Oleh_Bur', 
     icon: 'youtube',
-    description: 'Відео та девлоги',
+    description: 'Videos and devlogs',
   },
   {
     label: 'TikTok',
     url: 'https://www.tiktok.com/@bovv_company', 
     icon: 'tiktok',
-    description: 'Шортси та кліпи',
+    description: 'Shorts and clips',
   },
   {
     label: 'Telegram',
     url: 'https://t.me/+TWFAsZVJuhQ0MjQy', 
     icon: 'telegram',
-    description: 'Новини та анонси',
+    description: 'News, announcements and devtests',
   },
   {
     label: 'Google Play',
     url: 'https://play.google.com/store/apps/dev?id=9217177903920660550', 
     icon: 'playmarket',
-    description: 'Наші ігри',
+    description: 'Our games',
   },
 ];
 

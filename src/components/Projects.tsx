@@ -8,10 +8,10 @@ const Projects: React.FC = () => {
     <section className="projects section" id="projects">
       <div className="container">
         <div className="section-header">
-          <span className="section-eyebrow">Що ми робимо</span>
-          <h2 className="section-title">Наші проєкти</h2>
+          <span className="section-eyebrow">What we do          </span>
+          <h2 className="section-title">Our projects</h2>
           <p className="section-subtitle">
-            Ігри, які ми з любов'ю розробляємо — від концепції до релізу.
+            Games we develop with love — from concept to release.
           </p>
         </div>
 

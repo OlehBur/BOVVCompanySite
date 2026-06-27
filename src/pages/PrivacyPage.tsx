@@ -1,20 +1,29 @@
 import React from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { privacyPolicies } from '../data/privacy';
 import './PrivacyPage.css';
 
 const PrivacyPage: React.FC = () => {
   const { gameId } = useParams<{ gameId: string }>();
+  const navigate = useNavigate();
   const policy = privacyPolicies.find((p) => p.gameId === gameId);
 
   if (!policy) return <Navigate to="/" replace />;
 
+  const handleBack = () => {
+    sessionStorage.setItem('scrollTo', 'privacy');
+    navigate('/');
+  };
+
   return (
     <div className="privacy-page">
       <div className="privacy-page-inner container">
-        <Link to="/#privacy" className="privacy-back">
+        {/* <Link to="/#privacy" className="privacy-back">
           ← Назад
-        </Link>
+        </Link> */}
+        <button className="privacy-back" onClick={handleBack}>
+          ← Назад
+        </button>
 
         <header className="privacy-page-header">
           <span className="section-eyebrow">Privacy Policy</span>
@@ -58,9 +67,16 @@ const PrivacyPage: React.FC = () => {
             {privacyPolicies
               .filter((p) => p.gameId !== gameId)
               .map((p) => (
-                <Link key={p.gameId} to={`/privacy/${p.gameId}`} className="btn btn-ghost btn--sm">
+                // <Link key={p.gameId} to={`/privacy/${p.gameId}`} className="btn btn-ghost btn--sm">
+                //   {p.gameTitle}
+                // </Link>
+                <button
+                  key={p.gameId}
+                  className="btn btn-ghost btn--sm"
+                  onClick={() => navigate(`/privacy/${p.gameId}`)}
+                >
                   {p.gameTitle}
-                </Link>
+                </button>
               ))}
           </div>
         </div>

@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-nav">
-          <p className="footer-nav-title">Ігри</p>
+          <p className="footer-nav-title">Games</p>
           {games.map((g) => (
             <a key={g.id} href={`#projects`} className="footer-nav-link">
               {g.title}
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-nav">
-          <p className="footer-nav-title">Контакт</p>
+          <p className="footer-nav-title">Contact</p>
           <a href="mailto:bovv.company@gmail.com" className="footer-nav-link">
             bovv.company@gmail.com
           </a>
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="footer-bottom container">
-        <p>© {new Date().getFullYear()} BOVVCompany. Всі права захищені.</p>
+        <p>© {new Date().getFullYear()} BOVVCompany. All rights reserved.</p>
       </div>
     </footer>
   );
