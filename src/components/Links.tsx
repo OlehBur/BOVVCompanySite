@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocale } from '../i18n/LocaleContext';
-import { socialLinks } from '../data/social';
+import { getSocial } from '../data/social';
 import './Links.css';
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -35,6 +35,7 @@ const colorMap: Record<string, string> = {
 
 const Links: React.FC = () => {
   const { t } = useLocale();
+  const socialLinks = getSocial(t); 
 
   return (
     <section className="links section" id="links">
