@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { games } from '../data/games';
 import './Footer.css';
 
 const Footer: React.FC = () => {
+ const navigate = useNavigate();
+
   return (
     <footer className="footer">
       <div className="container footer-inner">
@@ -20,6 +22,7 @@ const Footer: React.FC = () => {
             <a key={g.id} className="footer-nav-link"
               // href={`#projects`}
               onClick={() => {
+                navigate('/');
                 document.getElementById("projects")?.scrollIntoView({ behavior: 'smooth', block: 'start' });
               }}>
               {g.title}

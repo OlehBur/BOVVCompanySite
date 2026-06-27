@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Activity.css';
 
 const CHANNEL_ID = 'UCYSWEa4ZRc2rS0ZJJ7Sei3A'; 
-const CHANNEL_HANDLE = 'Ohel Bur'; 
+const CHANNEL_HANDLE = 'Oleh_Bur'; 
 const MAX_VIDEOS = 8;
 const MAX_SHORTS = 4;
 

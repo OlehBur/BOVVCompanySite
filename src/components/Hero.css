@@ -46,8 +46,8 @@
 }
 
 .hero-logo-wrap {
-  width: 96px;
-  height: 96px;
+  width: 300px;
+  height: 300px;
   border-radius: 24px;
   overflow: hidden;
   border: 2px solid var(--accent);
