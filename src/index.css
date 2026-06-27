@@ -18,8 +18,8 @@
   --accent-cyan:  #06b6d4;
 
   --text-primary: #f0ecff;
-  --text-muted:   #9490b0;
-  --text-dim:     #514d6e;
+  --text-muted:   #b5b1d1;
+  --text-dim:     #9c95d1;
 
   --font-display: 'Space Grotesk', sans-serif;
   --font-body:    'Inter', sans-serif;
@@ -73,7 +73,7 @@ a { color: inherit; }
 .section-eyebrow {
   display: inline-block;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 1.2rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);

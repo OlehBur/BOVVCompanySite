@@ -1,12 +1,14 @@
 import React from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { privacyPolicies } from '../data/privacy';
+import { useLocale } from '../i18n/LocaleContext';
 import './PrivacyPage.css';
 
 const PrivacyPage: React.FC = () => {
   const { gameId } = useParams<{ gameId: string }>();
   const navigate = useNavigate();
   const policy = privacyPolicies.find((p) => p.gameId === gameId);
+  const { t } = useLocale();
 
   if (!policy) return <Navigate to="/" replace />;
 
@@ -22,14 +24,14 @@ const PrivacyPage: React.FC = () => {
           ← Назад
         </Link> */}
         <button className="privacy-back" onClick={handleBack}>
-          ← Назад
+          ← {t.privacy.back}
         </button>
 
         <header className="privacy-page-header">
-          <span className="section-eyebrow">Privacy Policy</span>
+          <span className="section-eyebrow">{t.privacy.privacy}</span>
           <h1 className="privacy-page-title">{policy.gameTitle}</h1>
           <div className="privacy-page-meta">
-            <span>Effective date: {policy.effectiveDate}</span>
+            <span>{t.privacy.effective_date} {policy.effectiveDate}</span>
           </div>
         </header>
 
@@ -51,9 +53,9 @@ const PrivacyPage: React.FC = () => {
         ))}
 
         <div className="privacy-page-contact">
-          <h2>Contact</h2>
+          <h2>{t.privacy.contact}</h2>
           <p>
-            If you have any questions or concerns, feel free to reach us at:{' '}
+            {t.privacy.questions}{' '}
             <a href={`mailto:${policy.contactEmail}`} className="inline-link">
               {policy.contactEmail}
             </a>
@@ -62,7 +64,7 @@ const PrivacyPage: React.FC = () => {
 
         {/* Links to other policies */}
         <div className="privacy-page-other">
-          <p className="privacy-page-other-label">Інші Privacy Policies:</p>
+          <p className="privacy-page-other-label">{t.privacy.others} {t.privacy.privacy}:</p>
           <div className="privacy-page-other-links">
             {privacyPolicies
               .filter((p) => p.gameId !== gameId)

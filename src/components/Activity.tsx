@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useLocale } from '../i18n/LocaleContext';
 import './Activity.css';
 
-const CHANNEL_ID = 'UCYSWEa4ZRc2rS0ZJJ7Sei3A'; 
-const CHANNEL_HANDLE = 'Oleh_Bur'; 
+
+const CHANNEL_ID = 'UCYSWEa4ZRc2rS0ZJJ7Sei3A';
+const CHANNEL_HANDLE = 'Oleh_Bur';
 const MAX_VIDEOS = 8;
 const MAX_SHORTS = 4;
 
@@ -72,6 +74,7 @@ const Activity: React.FC = () => {
   const [videos, setVideos] = useState<VideoItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const { t } = useLocale();
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -96,17 +99,17 @@ const Activity: React.FC = () => {
     <section className="activity section" id="activity">
       <div className="container">
         <div className="section-header">
-          <span className="section-eyebrow">Follow us</span>
+          <span className="section-eyebrow">{t.activity.follow_us}</span>
           <h2 className="section-title">Activity</h2>
           <p className="section-subtitle">
-            Latest videos from our {' '}
+            {t.activity.last_vid_from} {' '}
             <a
               href={`https://youtube.com/@${CHANNEL_HANDLE}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-link"
             >
-              YouTube channel
+              {t.activity.yt_channel}
             </a>
           </p>
         </div>
@@ -114,14 +117,14 @@ const Activity: React.FC = () => {
         {loading && (
           <div className="activity-loading">
             <div className="loader" />
-            <p>Loading video...</p>
+            <p>{t.activity.loading_vid}</p>
           </div>
         )}
 
         {error && (
           <div className="activity-error">
             <p>
-              Failed to download video. Watch the channel live:{' '}
+              {t.activity.failed_downl_vid}{' '}
               <a
                 href={`https://youtube.com/@${CHANNEL_HANDLE}`}
                 target="_blank"
@@ -139,7 +142,7 @@ const Activity: React.FC = () => {
             {regular.length > 0 && (
               <div className="activity-block">
                 <h3 className="activity-sub-title">
-                  <span>▶</span> Latest videos
+                  <span>▶</span> {t.activity.last_vid}
                 </h3>
                 <div className="videos-grid">
                   {regular.map((v) => (
@@ -152,7 +155,7 @@ const Activity: React.FC = () => {
             {shorts.length > 0 && (
               <div className="activity-block">
                 <h3 className="activity-sub-title">
-                  <span>#</span> Shorts
+                  <span>#</span> {t.activity.shorts}
                 </h3>
                 <div className="shorts-grid">
                   {shorts.map((v) => (
@@ -161,12 +164,11 @@ const Activity: React.FC = () => {
                 </div>
               </div>
             )}
-
-            {regular.length === 0 && shorts.length === 0 && (
+            {/* {regular.length === 0 && shorts.length === 0 && (
               <p className="activity-empty">
                 Videos have not yet appeared. Subscribe so you don't miss out!
               </p>
-            )}
+            )} */}
           </>
         )}
       </div>

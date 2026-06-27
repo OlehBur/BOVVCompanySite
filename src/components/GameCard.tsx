@@ -1,5 +1,6 @@
 import React from 'react';
 import { type GameData } from '../data/games';
+import { useLocale } from '../i18n/LocaleContext';
 import './GameCard.css';
 
 interface Props {
@@ -33,6 +34,7 @@ const AppStoreIcon = () => (
 const GameCard: React.FC<Props> = ({ game }) => {
   const hasAnyPlatform =
     game.platforms.googlePlay || game.platforms.steam || game.platforms.appStore;
+  const { t } = useLocale();
 
   return (
     <div className="game-card">
@@ -67,9 +69,9 @@ const GameCard: React.FC<Props> = ({ game }) => {
           {/* Status */}
           <div className="game-card-status">
             {game.isPublished ? (
-              <span className="status-badge status-badge--live">● Live</span>
+              <span className="status-badge status-badge--live">● {t.game_card.live}</span>
             ) : (
-              <span className="status-badge status-badge--wip">⟳ In development</span>
+              <span className="status-badge status-badge--wip">⟳ {t.game_card.dev}</span>
             )}
           </div>
 
@@ -81,7 +83,7 @@ const GameCard: React.FC<Props> = ({ game }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="platform-btn platform-btn--gplay"
-                title="Download on Google Play"
+                title={`${t.game_card.download} Google Play`}
               >
                 <GooglePlayIcon />
                 <span>Google Play</span>
@@ -94,7 +96,7 @@ const GameCard: React.FC<Props> = ({ game }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="platform-btn platform-btn--steam"
-                title="View on Steam"
+                title={`${t.game_card.view} Steam`}
               >
                 <SteamIcon />
                 <span>Steam</span>
@@ -107,7 +109,7 @@ const GameCard: React.FC<Props> = ({ game }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="platform-btn platform-btn--appstore"
-                title="Download on App Store"
+                title={`${t.game_card.download} App Store`}
               >
                 <AppStoreIcon />
                 <span>App Store</span>
@@ -126,16 +128,16 @@ const GameCard: React.FC<Props> = ({ game }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="platform-btn platform-btn--tg"
-                title="Telegram  community"
+                title={`Telegram  ${t.game_card.community}`}
               >
                 <TelegramIcon />
-                <span>Community</span>
+                <span>{t.game_card.community}</span>
               </a>
             )}
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

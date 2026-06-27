@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocale } from '../i18n/LocaleContext';
 import './Navbar.css';
 
 // Smooth-scroll to sect by id
@@ -28,7 +29,9 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const { locale, setLocale, } = useLocale();
   const isHome = location.pathname === '/';
+
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -58,13 +61,6 @@ const Navbar: React.FC = () => {
       }
     }
   };
-  // const navLinks = [
-  //   { label: 'Головна', href: isHome ? '#home' : '/' },
-  //   { label: 'Проєкти', href: isHome ? '#projects' : '/#projects' },
-  //   { label: 'Активність', href: isHome ? '#activity' : '/#activity' },
-  //   { label: 'Privacy Policy', href: isHome ? '#privacy' : '/#privacy' },
-  //   { label: 'Контакти', href: isHome ? '#links' : '/#links' },
-  // ];
 
   return (
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
@@ -103,6 +99,17 @@ const Navbar: React.FC = () => {
           <span className={menuOpen ? 'open' : ''} />
           <span className={menuOpen ? 'open' : ''} />
         </button>
+      </div>
+      <div className="locale-switcher">
+        <button
+          className={locale === 'uk' ? 'active' : ''}
+          onClick={() => setLocale('uk')}
+        >UK</button>
+        <span>/</span>
+        <button
+          className={locale === 'en' ? 'active' : ''}
+          onClick={() => setLocale('en')}
+        >EN</button>
       </div>
     </nav>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocale } from '../i18n/LocaleContext';
 import './Hero.css';
 import banner_img from '../assets/dj_banner.jpg';
 import logo_img from '../assets/logo.png';
@@ -7,6 +8,7 @@ const Hero: React.FC = () => {
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
+  const { t } = useLocale();
 
   return (
     <section className="hero" id="home">
@@ -36,23 +38,19 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="hero-text">
-          <span className="hero-eyebrow">Indie Game Studio</span>
+          <span className="hero-eyebrow">{t.hero.eyebrow}</span>
           <h1 className="hero-title">
-            Bovv<span className="hero-title-accent">Company</span>
+            BOVV<span className="hero-title-accent">Company</span>
           </h1>
           <p className="hero-tagline">
-            Everything you can imagine can be turned into a game. The only limits are your skills and time.<br />
-            We make addictive games.
+            {t.hero.tagline}
           </p>
           <div className="hero-cta-row">
             <button className="btn btn-primary" onClick={() => scrollTo('projects')}>
-              Our projects
+              {t.hero.projects}
             </button>
-            {/* <a href="#links" className="btn btn-ghost">
-              Слідкувати
-            </a> */}
             <button className="btn btn-ghost" onClick={() => scrollTo('links')}>
-              Follow
+              {t.hero.follow}
             </button>
           </div>
         </div>

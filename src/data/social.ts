@@ -5,30 +5,33 @@ export interface SocialLink {
   description?: string;
 }
 
+import { useLocale } from '../i18n/LocaleContext';
+const { t } = useLocale();
+
 export const socialLinks: SocialLink[] = [
   {
     label: 'YouTube',
     url: 'https://www.youtube.com/@Oleh_Bur', 
     icon: 'youtube',
-    description: 'Videos and devlogs',
+    description: t.social.yt_desc,
   },
   {
     label: 'TikTok',
     url: 'https://www.tiktok.com/@bovv_company', 
     icon: 'tiktok',
-    description: 'Shorts and clips',
+    description: t.social.tt_desc,
   },
   {
     label: 'Telegram',
     url: 'https://t.me/+TWFAsZVJuhQ0MjQy', 
     icon: 'telegram',
-    description: 'News, announcements and devtests',
+    description: t.social.tg_desc,
   },
   {
     label: 'Google Play',
     url: 'https://play.google.com/store/apps/dev?id=9217177903920660550', 
     icon: 'playmarket',
-    description: 'Our games',
+    description: t.social.gp_desc,
   },
 ];
 
