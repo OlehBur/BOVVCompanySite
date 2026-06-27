@@ -9,15 +9,21 @@
     /* Bundler mode */
     "module": "nodenext",
     "allowImportingTsExtensions": true,
+    // "moduleResolution": "bundler",
+    "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
+    "strict": true,
     "noEmit": true,
 
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
   },
   "include": ["vite.config.ts"]
 }
+
+
