@@ -14,6 +14,9 @@ export interface GameData {
   telegramGroup?: string; // Telegram group/channel URL
 }
 
+import dj_img from '../assets/DJ.png';
+import sp_img from '../assets/SP.jpg';
+
 export const games: GameData[] = [
   {
     id: 'deep-jaws',
@@ -22,7 +25,7 @@ export const games: GameData[] = [
       'Dive into the depths of the ocean and survive among predators. A survival arcade game with leaderboards and achievements.',
     genre: 'Arcade / Survival',
     tags: ['Arcade', 'Survival', 'Ocean'],
-    coverImage: '../assets/DJ.png',
+    coverImage: dj_img,
     isPublished: true,
     platforms: {
       googlePlay: 'https://play.google.com/store/apps/details?id=com.bovvcompany.deepjaws', 
@@ -36,7 +39,7 @@ export const games: GameData[] = [
       'Fly, explore, pump the island and deliver goods.',
     genre: 'Casual / Simulators',
     tags: ['Casual', 'Arcade', 'Simulators'],
-    coverImage: '../assets/SP.jpg',
+    coverImage: sp_img,
     isPublished: false, // in dev
     platforms: {
       // googlePlay: '', //todo

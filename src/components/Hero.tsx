@@ -1,5 +1,7 @@
 import React from 'react';
 import './Hero.css';
+import banner_img from '../assets/dj_banner.jpg';
+import logo_img from '../assets/logo.png';
 
 const Hero: React.FC = () => {
   const scrollTo = (id: string) => {
@@ -11,8 +13,8 @@ const Hero: React.FC = () => {
       {/* Banner image strip */}
       <div className="hero-banner">
         <img
-          src="../assets/dj_banner.jpg"
-          alt="BovvCompany banner"
+          src={banner_img}
+          alt="BOVVCompany banner"
           className="hero-banner-img"
           onError={(e) => {
             (e.target as HTMLImageElement).style.display = 'none';
@@ -24,7 +26,7 @@ const Hero: React.FC = () => {
       <div className="hero-content">
         <div className="hero-logo-wrap">
           <img
-            src="../assets/logo.png"
+            src={logo_img}
             alt="BovvCompany logo"
             className="hero-logo"
             onError={(e) => {

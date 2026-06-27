@@ -17,7 +17,11 @@ const Footer: React.FC = () => {
         <div className="footer-nav">
           <p className="footer-nav-title">Games</p>
           {games.map((g) => (
-            <a key={g.id} href={`#projects`} className="footer-nav-link">
+            <a key={g.id} className="footer-nav-link"
+              // href={`#projects`}
+              onClick={() => {
+                document.getElementById("projects")?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}>
               {g.title}
             </a>
           ))}
@@ -43,7 +47,7 @@ const Footer: React.FC = () => {
       <div className="footer-bottom container">
         <p>© {new Date().getFullYear()} BOVVCompany. All rights reserved.</p>
       </div>
-    </footer>
+    </footer >
   );
 };
 

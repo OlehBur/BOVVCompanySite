@@ -7,10 +7,10 @@
 
 /* ── Tokens ─────────────────────────────────────────────── */
 :root {
-  --bg:           #080612;
-  --bg-alt:       #0d0b1a;
-  --surface:      #130f22;
-  --surface-2:    #1a1530;
+  --bg:           #130f27;
+  --bg-alt:       #2a2644;
+  --surface:      #332e44;
+  --surface-2:    #3b3652;
 
   --accent:       #7C3AED;       /* electric violet */
   --accent-light: #a066f5;
