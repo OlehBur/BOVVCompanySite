@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { games } from '../data/games';
+import { getGames } from '../data/games';
 import { useLocale } from '../i18n/LocaleContext';
 import './Footer.css';
 
 const Footer: React.FC = () => {
   const navigate = useNavigate();
   const { t } = useLocale();
+  const games = getGames(t);
 
   return (
     <footer className="footer">

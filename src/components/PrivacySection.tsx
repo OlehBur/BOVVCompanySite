@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { games } from '../data/games';
+import { getGames } from '../data/games';
 import { useLocale } from '../i18n/LocaleContext';
 import './PrivacySection.css';
 
 const PrivacySection: React.FC = () => {
   const { t } = useLocale();
+  const games = getGames(t);
 
   return (
     <section className="privacy-section section" id="privacy">
