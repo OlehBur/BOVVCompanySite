@@ -19,8 +19,6 @@ import sp_img from '../assets/SP.jpg';
 import { type Translations } from '../i18n/translations';
 
 
-// export const games: GameData[] = [
-//   {
 export const getGames = (t: Translations): GameData[] => [
   {
     id: 'deep-jaws',

@@ -20,9 +20,6 @@ const PrivacyPage: React.FC = () => {
   return (
     <div className="privacy-page">
       <div className="privacy-page-inner container">
-        {/* <Link to="/#privacy" className="privacy-back">
-          ← Назад
-        </Link> */}
         <button className="privacy-back" onClick={handleBack}>
           ← {t.privacy.back}
         </button>
@@ -69,9 +66,6 @@ const PrivacyPage: React.FC = () => {
             {privacyPolicies
               .filter((p) => p.gameId !== gameId)
               .map((p) => (
-                // <Link key={p.gameId} to={`/privacy/${p.gameId}`} className="btn btn-ghost btn--sm">
-                //   {p.gameTitle}
-                // </Link>
                 <button
                   key={p.gameId}
                   className="btn btn-ghost btn--sm"

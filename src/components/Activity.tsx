@@ -164,11 +164,6 @@ const Activity: React.FC = () => {
                 </div>
               </div>
             )}
-            {/* {regular.length === 0 && shorts.length === 0 && (
-              <p className="activity-empty">
-                Videos have not yet appeared. Subscribe so you don't miss out!
-              </p>
-            )} */}
           </>
         )}
       </div>

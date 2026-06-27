@@ -6,10 +6,8 @@ export interface SocialLink {
 }
 
 import { type Translations } from '../i18n/translations';
-// const { t } = useLocale();
 
 export const getSocial = (t: Translations): SocialLink[] => [
-  // export const socialLinks: SocialLink[] = [
   {
     label: 'YouTube',
     url: 'https://www.youtube.com/@Oleh_Bur',

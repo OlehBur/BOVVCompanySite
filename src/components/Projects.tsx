@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
   return (
     <section className="projects section" id="projects">
       <div className="container">
-        <div className="section-header">
+        <div className="section-header" id="games">
           <span className="section-eyebrow">{t.projects.eyebrow}</span>
           <h2 className="section-title">{t.projects.title}</h2>
           <p className="section-subtitle">
