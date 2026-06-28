@@ -10,6 +10,8 @@ const PrivacyPage: React.FC = () => {
   const policy = privacyPolicies.find((p) => p.gameId === gameId);
   const { t } = useLocale();
 
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+
   if (!policy) return <Navigate to="/" replace />;
 
   const handleBack = () => {

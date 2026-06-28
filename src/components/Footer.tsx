@@ -23,7 +23,6 @@ const Footer: React.FC = () => {
           <p className="footer-nav-title">{t.footer.games}</p>
           {games.map((g) => (
             <a key={g.id} className="footer-nav-link"
-              // href={`#projects`}
               onClick={() => {
                 navigate('/');
                 setTimeout(() =>
