@@ -270,7 +270,7 @@ smartclip.net, 13564, RESELLER
 
 start.io, 168507669, RESELLER
 
-start.io, 197760873, RESELLERnp
+start.io, 197760873, RESELLER
 
 targetbetter.com, 82228, RESELLER
 
