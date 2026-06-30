@@ -1,5 +1,6 @@
 ironsrc.com, 645647, DIRECT
 ownerdomain=olehbur.github.io
+
 adagio.io, 1522, RESELLER
 
 adform.com, 3400, RESELLER, 9f5210a2f0999e32
@@ -333,5 +334,3 @@ xandr.com, 17779, RESELLER
 zetaglobal.net, 630, RESELLER
 
 zmaticoo.com, 5135195, RESELLER
-
-start.io, 197760873, RESELLER
