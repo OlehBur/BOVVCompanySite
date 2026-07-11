@@ -1,5 +1,6 @@
 ironsrc.com, 645647, DIRECT
 ownerdomain=olehbur.github.io
+google.com, pub-2793002495852198, DIRECT, f08c47fec0942fa0
 
 adagio.io, 1522, RESELLER
 
