@@ -125,12 +125,20 @@
   height: 180px;
   background: linear-gradient(to bottom, var(--accent), transparent);
   margin: 0 auto;
-  animation: scrollPulse 2s ease-in-out infinite;
+
+/* --- fixes for mobile --- */
+  will-change: transform, opacity;
+  backface-visibility: hidden; 
+  transform: translateZ(0); 
+  transform-origin: top; 
+  /* ------------------------------------- */
+
+  animation: scrollPulse 3s ease-in-out infinite;
 }
 
 @keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; transform: scaleY(1); }
-  50% { opacity: 1; transform: scaleY(1.1); }
+  0%, 100% { opacity: 0.3; transform: scaleY(1) translateZ(0); }
+  50% { opacity: 1; transform: scaleY(1.1) translateZ(0); }
 }
 
 @media (max-width: 600px) {
