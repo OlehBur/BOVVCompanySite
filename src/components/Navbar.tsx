@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useLocale } from '../i18n/LocaleContext';
 import './Navbar.css';
+import logo_img from '../assets/logo.png';
 
 // Smooth-scroll to sect by id
 const scrollToSection = (id: string) => {
@@ -68,7 +69,7 @@ const Navbar: React.FC = () => {
           if (isHome) window.scrollTo({ top: 0, behavior: 'smooth' });
         }}>
           <img
-            src="my-dev-site.src/assets/logo.png"
+            src={logo_img}
             alt="logo"
             className="navbar-logo"
             onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
