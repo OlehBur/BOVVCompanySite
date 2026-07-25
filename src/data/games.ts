@@ -31,7 +31,7 @@ export const getGames = (t: Translations): GameData[] => [
     platforms: {
       googlePlay: 'https://play.google.com/store/apps/details?id=com.bovvcompany.deepjaws',
     },
-    telegramGroup: 'https://t.me/+ckpwFkUvGSc2Mjky',
+    telegramGroup: 'https://t.me/+fqTjW6vNFxgxZDdi',
   },
   {
     id: 'spin-the-prop',
