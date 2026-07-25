@@ -5,8 +5,8 @@ import './Activity.css';
 
 const CHANNEL_ID = 'UCYSWEa4ZRc2rS0ZJJ7Sei3A';
 const CHANNEL_HANDLE = 'Oleh_Bur';
-const MAX_VIDEOS = 8;
-const MAX_SHORTS = 4;
+const MAX_VIDEOS = 6;
+const MAX_SHORTS = 6;
 
 // YouTube RSS thr pub cors-proxy (allorigins)
 const RSS_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
@@ -60,7 +60,7 @@ const VideoCard: React.FC<{ video: VideoItem; isShort?: boolean }> = ({ video, i
       <div className="video-card-thumb">
         <img src={video.thumbnail} alt={video.title} loading="lazy" />
         <span className="video-card-play">▶</span>
-        {isShort && <span className="video-card-short-badge">Short</span>}
+        {/* {isShort && <span className="video-card-short-badge">Short</span>} */}
       </div>
       <div className="video-card-info">
         <p className="video-card-title">{video.title.replace(/#\w+/g, '').trim()}</p>
