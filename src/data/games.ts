@@ -16,6 +16,7 @@ export interface GameData {
 
 import dj_img from '../assets/DJ.png';
 import sp_img from '../assets/SP.jpg';
+import pi_img from '../assets/PI.png';
 import { type Translations } from '../i18n/translations';
 
 
@@ -31,7 +32,20 @@ export const getGames = (t: Translations): GameData[] => [
     platforms: {
       googlePlay: 'https://play.google.com/store/apps/details?id=com.bovvcompany.deepjaws',
     },
-    telegramGroup: 'https://t.me/+fqTjW6vNFxgxZDdi',
+    telegramGroup: 'https://t.me/deep_jaws',
+  },
+  {
+    id: 'pisok-io',
+    title: 'Pisok.io',
+    description: t.game_data.pi_desc,
+    genre: t.game_data.pi_genre,
+    tags: [...t.game_data.pi_tags],
+    coverImage: pi_img,
+    isPublished: false,
+    platforms: {
+      // googlePlay: 'https://play.google.com/store/apps/details?id=com.bovvcompany.pisok_io',
+    },
+    telegramGroup: 'https://t.me/pisok_io',
   },
   {
     id: 'spin-the-prop',
@@ -46,6 +60,6 @@ export const getGames = (t: Translations): GameData[] => [
       // steam: '',
       // appStore: '',
     },
-    telegramGroup: 'https://t.me/+TWFAsZVJuhQ0MjQy',
+    telegramGroup: 'https://t.me/spin_the_prop',
   },
 ];

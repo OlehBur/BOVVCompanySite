@@ -38,7 +38,8 @@ const parseRSS = (xml: string): VideoItem[] => {
       published,
       thumbnail: `https://i.ytimg.com/vi/${videoId}/mqdefault.jpg`,
       url: `https://www.youtube.com/watch?v=${videoId}`,
-      isShort: title.toLowerCase().includes('#BOVVCompany') || title.toLowerCase().includes('short'),
+      isShort:  title.toLowerCase().includes('short'),
+      // title.toLowerCase().includes('#BOVVCompany') ||
     };
   });
 };

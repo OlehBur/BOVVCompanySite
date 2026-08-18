@@ -46,6 +46,9 @@ export const translations = {
             dj_desc: 'Пориньте в глибини океану та виживіть серед хижаків. Аркадна гра на виживання та стратегію з таблицями лідерів та досягненнями.',
             dj_genre: 'Аркада / Виживання',
             dj_tags: ['Аркада', 'Виживання', 'Океан'],
+            pi_desc: 'Завоюйте пісочницю! Поглинайте дрібніші об’єкти, щоб перетворитися з крихітної піщинки до величезного об\'єкта, використовуючи спеціальні здібності для виживання.',
+            pi_genre: 'Пісочниця / .io',
+            pi_tags: ['Пісочниця', '.io', 'Виживання'],
             sp_desc: 'Літай, досліджуй, будуй власний острів, заробляй гроші та доставляй товари.',
             sp_genre: 'Казуальна / Симулятор',
             sp_tags: ['Казуальна', 'Аркада', 'Симулятор']
@@ -120,6 +123,9 @@ export const translations = {
             dj_desc: 'Dive into the depths of the ocean and survive among predators.A survival arcade game with leaderboards and achievements.',
             dj_genre: 'Arcade / Survival',
             dj_tags: ['Arcade', 'Survival', 'Ocean'],
+            pi_desc: 'Conquer the sandbox! Absorb smaller objects to grow from a tiny grain of sand into a massive entity, using special abilities to survive.',
+            pi_genre: 'Sandbox / .io',
+            pi_tags: ['Sandbox', '.io', 'Survival'],
             sp_desc: 'Fly, explore, build your own island, earn money, and deliver goods.',
             sp_genre: 'Casual / Simulators',
             sp_tags: ['Casual', 'Arcade', 'Simulators']

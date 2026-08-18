@@ -60,6 +60,51 @@ export const privacyPolicies: PrivacyPolicy[] = [
     contactEmail: 'bovv.company@gmail.com',
   },
   {
+    gameId: 'pisok-io',
+    gameTitle: 'Pisok.io',
+    effectiveDate: '18.08.2026',
+    lastUpdated: '2026-08-18',
+    intro:
+      'We at BovvCompany respect your privacy. This policy explains what data is collected when you use Pisok.io, how it is used, and your rights regarding it.',
+    sections: [
+      {
+        title: '1. Data Collection & Offline Gameplay',
+        content: [
+          'Pisok.io is designed as an offline-first, free-to-play game. The app itself does not directly collect, store, or transmit any personal information or gameplay telemetry.',
+          'The game does not require account registration, internet connectivity for core gameplay, or third-party authentication services (such as Google Play Games Services).',
+        ],
+      },
+      {
+        title: '2. Rewarded Advertising',
+        content: [
+          'Pisok.io contains optional rewarded advertisements that are accessible only when an active internet connection is present.',
+          'Ads are served through verified third-party ad platforms (such as Unity LevelPlay / IronSource). When connected, these ad networks may collect device identifiers (such as Advertising ID or IP address) solely to serve and validate rewarded ads.',
+          'We, as the developer, do not directly access, store, or control this technical data. You can opt out of personalized advertising at any time through your device settings.',
+        ],
+      },
+      {
+        title: '3. In-App Purchases',
+        content: [
+          'Pisok.io offers a single, optional in-app purchase intended solely as a "Support the Developer" contribution. This purchase is purely voluntary and does not grant gameplay advantages or lock core mechanics.',
+          'All transactions are processed securely by Google Play Billing. We do not receive, handle, or store any payment or credit card details.',
+        ],
+      },
+      {
+        title: '4. Children\'s Privacy',
+        content: [
+          'This app is intended for general audiences and is not specifically targeted at children under 13. We do not knowingly collect personal information from children.',
+        ],
+      },
+      {
+        title: '5. Changes to This Policy',
+        content: [
+          'We may update this Privacy Policy from time to time. Any changes will be reflected here with a revised last updated date.',
+        ],
+      },
+    ],
+    contactEmail: 'bovv.company@gmail.com',
+  },
+  {
     gameId: 'spin-the-prop',
     gameTitle: 'Spin the Prop',
     effectiveDate: '31.01.2026',
