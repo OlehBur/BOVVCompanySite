@@ -227,6 +227,14 @@
 }
 .platform-btn--tg:hover { background: rgba(38, 168, 215, 0.2); }
 
+.platform-btn--indiedb {
+  background: rgba(168, 215, 38, 0.12);
+  color: #a8d726;
+  border: 1px solid rgba(168, 215, 38, 0.25);
+}
+.platform-btn--indiedb:hover { background: rgba(38, 168, 215, 0.2); }
+
+
 .platform-btn--soon {
   background: rgba(255, 255, 255, 0.05);
   color: var(--text-dim);

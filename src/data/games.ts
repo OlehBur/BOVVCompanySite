@@ -10,6 +10,7 @@ export interface GameData {
     googlePlay?: string;   // URL if available
     steam?: string;        // URL if available
     appStore?: string;     // URL if available
+    indiedb?: string;
   };
   telegramGroup?: string; // Telegram group/channel URL
 }
@@ -31,6 +32,7 @@ export const getGames = (t: Translations): GameData[] => [
     isPublished: true,
     platforms: {
       googlePlay: 'https://play.google.com/store/apps/details?id=com.bovvcompany.deepjaws',
+      indiedb: `https://www.indiedb.com/games/deep-jaws`
     },
     telegramGroup: 'https://t.me/deep_jaws',
   },
