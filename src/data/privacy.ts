@@ -85,8 +85,7 @@ export const privacyPolicies: PrivacyPolicy[] = [
       {
         title: '3. In-App Purchases',
         content: [
-          'Pisok.io offers a single, optional in-app purchase intended solely as a "Support the Developer" contribution. This purchase is purely voluntary and does not grant gameplay advantages or lock core mechanics.',
-          'All transactions are processed securely by Google Play Billing. We do not receive, handle, or store any payment or credit card details.',
+          'Pisok.io does not contain any in‑app purchases.',
         ],
       },
       {
