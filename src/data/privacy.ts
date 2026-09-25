@@ -20,7 +20,7 @@ export const privacyPolicies: PrivacyPolicy[] = [
     effectiveDate: '10.12.2025',
     lastUpdated: '2026-06-27',
     intro:
-      'We at BovvCompany respect your privacy. This policy explains what data is collected when you use Deep Jaws, how it is used, and your rights regarding it.',
+      'We at BOVV Company respect your privacy. This policy explains what data is collected when you use Deep Jaws, how it is used, and your rights regarding it.',
     sections: [
       {
         title: '1. Data Collection',
@@ -65,7 +65,7 @@ export const privacyPolicies: PrivacyPolicy[] = [
     effectiveDate: '18.08.2026',
     lastUpdated: '2026-08-18',
     intro:
-      'We at BovvCompany respect your privacy. This policy explains what data is collected when you use Pisok.io, how it is used, and your rights regarding it.',
+      'We at BOVV Company respect your privacy. This policy explains what data is collected when you use Pisok.io, how it is used, and your rights regarding it.',
     sections: [
       {
         title: '1. Data Collection & Offline Gameplay',
@@ -95,7 +95,13 @@ export const privacyPolicies: PrivacyPolicy[] = [
         ],
       },
       {
-        title: '5. Changes to This Policy',
+        title: '5. User Data Rights & Deletion',
+        content: [
+          'Since we do not collect or store any personal data on our servers, there is no user account or personal data to delete. For technical identifiers collected by third-party ad networks (like Advertising ID), you can reset or delete your Advertising ID directly via your Android device settings.',
+        ],
+      },
+      {
+        title: '6. Changes to This Policy',
         content: [
           'We may update this Privacy Policy from time to time. Any changes will be reflected here with a revised last updated date.',
         ],
@@ -109,7 +115,7 @@ export const privacyPolicies: PrivacyPolicy[] = [
     effectiveDate: '31.01.2026',
     lastUpdated: '2026-06-27',
     intro:
-      'BovvCompany is committed to protecting your privacy. This Privacy Policy describes how Spin the Prop handles information during your use of the application.',
+      'BOVV Company is committed to protecting your privacy. This Privacy Policy describes how Spin the Prop handles information during your use of the application.',
     sections: [
       {
         title: '1. Information Collection and Use',
