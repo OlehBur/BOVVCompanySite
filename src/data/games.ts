@@ -11,6 +11,7 @@ export interface GameData {
     steam?: string;        // URL if available
     appStore?: string;     // URL if available
     indiedb?: string;
+    itchio?: string;
   };
   telegramGroup?: string; // Telegram group/channel URL
 }
@@ -32,7 +33,8 @@ export const getGames = (t: Translations): GameData[] => [
     isPublished: true,
     platforms: {
       googlePlay: 'https://play.google.com/store/apps/details?id=com.bovvcompany.deepjaws',
-      indiedb: `https://www.indiedb.com/games/deep-jaws`
+      indiedb: `https://www.indiedb.com/games/deep-jaws`,
+      itchio: `https://bovv-company.itch.io/deep-jaws`,
     },
     telegramGroup: 'https://t.me/deep_jaws',
   },
@@ -46,6 +48,8 @@ export const getGames = (t: Translations): GameData[] => [
     isPublished: false,
     platforms: {
       // googlePlay: 'https://play.google.com/store/apps/details?id=com.bovvcompany.pisok_io',
+      indiedb: `https://www.indiedb.com/games/pisokio`,
+      itchio: `https://bovv-company.itch.io/pisokio`,
     },
     telegramGroup: 'https://t.me/pisok_io',
   },

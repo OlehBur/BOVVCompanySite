@@ -55,6 +55,7 @@ export const translations = {
         },
         social: {
             yt_desc: 'Відео та девлоги',
+            x_desc: 'Мемлоги',
             tt_desc: 'Шортси та кліпи',
             tg_desc: 'Новини, анонси та тести',
             gp_desc: 'Доступ до наших ігор'
@@ -132,6 +133,7 @@ export const translations = {
         },
         social: {
             yt_desc: 'Videos and devlogs',
+            x_desc: 'Funlogs',
             tt_desc: 'Shorts and clips',
             tg_desc: 'News, announcements and devtests',
             gp_desc: 'Our games'
