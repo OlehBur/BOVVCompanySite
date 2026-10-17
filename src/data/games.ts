@@ -45,9 +45,9 @@ export const getGames = (t: Translations): GameData[] => [
     genre: t.game_data.pi_genre,
     tags: [...t.game_data.pi_tags],
     coverImage: pi_img,
-    isPublished: false,
+    isPublished: true,
     platforms: {
-      // googlePlay: 'https://play.google.com/store/apps/details?id=com.bovvcompany.pisok_io',
+      googlePlay: 'https://play.google.com/store/apps/details?id=com.bovvcompany.pisok_io',
       indiedb: `https://www.indiedb.com/games/pisokio`,
       itchio: `https://bovv-company.itch.io/pisokio`,
     },

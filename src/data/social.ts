@@ -1,7 +1,7 @@
 export interface SocialLink {
   label: string;
   url: string;
-  icon: 'youtube' | 'x' | 'tiktok' | 'telegram' | 'playmarket';
+  icon: 'youtube' | 'discord' | 'x' | 'tiktok' | 'telegram' | 'playmarket';
   description?: string;
 }
 
@@ -13,6 +13,12 @@ export const getSocial = (t: Translations): SocialLink[] => [
     url: 'https://www.youtube.com/@Oleh_Bur',
     icon: 'youtube',
     description: t.social.yt_desc,
+  },
+  {
+    label: 'Discord',
+    url: 'https://discord.com/invite/V5g6aamFjp',
+    icon: 'discord',
+    description: t.social.dc_desc,
   },
   {
     label: 'X',

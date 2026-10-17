@@ -132,6 +132,7 @@ export const translations = {
             sp_tags: ['Casual', 'Arcade', 'Simulators']
         },
         social: {
+            dc_desc: 'Join our community',
             yt_desc: 'Videos and devlogs',
             x_desc: 'Funlogs',
             tt_desc: 'Shorts and clips',
